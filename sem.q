@@ -8,7 +8,7 @@ A[] not ((W0.cs or W1.cs) and (R0.cs or R1.cs))
 /*
 
 */
-A[] not Sem.overflow
+A[] (not Sem_x.overflow) and (not Sem_y.overflow) and (not Sem_z.overflow) and (not Sem_wsem.overflow) and (not Sem_rsem.overflow)
 
 /*
 
