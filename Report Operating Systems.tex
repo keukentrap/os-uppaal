@@ -53,7 +53,7 @@ Synchronization properties van Downey:
 \item If there are threads waiting on a semaphore when a thread executes signal, then one of the waiting threads has to be woken.
 \item If a thread is waiting at a semaphore, then the number of threads that will be woken before it is bounded.
 \end{itemize}
-Onze Uppaaluitwerking voldoet aan deze vier punten van Downey. Dit is vooral omdat in het voorbeeld-semafoor-bestand de semaforen ro\\
+Onze Uppaaluitwerking voldoet aan deze vier punten van Downey. Dit is vooral omdat in het voorbeeld-semafoor-bestand de semaforen correct zijn. Ook is er bij ons geen starvation mogelijk.\\
 Wel weten wij door onze queries in Uppaal dat de processen netjes synchroon lopen. We controleren bijvoorbeeld of er een situatie is waar er meerdere readerprocessen (om exact te zijn 2) de data aan het lezen zijn. Ook controleren wij op overflow, of writers niet tegelijk aan het schrijven zijn en controleren we of er deadlocks zijn. De laatste drie queries zijn er voor om de correctheid van het Uppaal-model te bewijzen.
 
 \subsection*{Reflectie}
